@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" class="top">
+  <head>
+    <title>Spinalytics</title>
+    <link rel="stylesheet" href="spin.css" />
+  </head>
+  <body>
+    <section class="dashboard">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="SBIR.html"> SBIR Database Analysis </a></li>
+        <li><a href="Spinalytics.html"> Spinalytics </a></li>
+      </ul>
+    </section>
+    <section class="all">
+      <section class="content">
+        <h1>Spinalytics</h1>
+        <p>
+          As General Manager of WZBC-Newton 90.3 I wanted to create a faux
+          spotify wrapped for my friend's and my radio shows. I achieved this by
+          creating a React app called
+          <a href="http://spinalytics.s3-website.us-east-2.amazonaws.com/"
+            >Spinalytics</a
+          >. The website details the top 10 Artists, Songs, and Genres for 3
+          different shows at WZBC. This app is in the early stages of
+          development, with the end goal of having all shows at WZBC documented.
+          To get the data I used a python based web scraper called Scrapy, which
+          I used to collect data off of
+          <a href="https://spinitron.com/WZBC/calendar">Spinitron</a> which
+          catelogues the songs played for each show. I then used AWS Timestream
+          DB to house the data, Lambda to query the DB, API gateway and Postman
+          for the restful API, and finally S3 buckets to host the react app.
+        </p>
+      </section>
+      <section class="pic">
+         <img
+          src="https://cdn.glitch.global/ec58ffa2-1356-4865-ae89-2048ea7b9070/Spin%20dia.png?v=1741788288945"
+          alt="1"
+          width="400"
+          height="400"
+        />
+      </section>
+    </section>
+  </body>
+</html>
